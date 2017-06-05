@@ -5,32 +5,49 @@ html{
 body{
     overflow: hidden;
     color: #FFF;
+    background-image: url("imgs/background3.jpg");
+    background-position: top center;
+    background-size: 100%;
 }
 
-.backgroundImage{
-    background-image: url("imgs/background.jpg");
-    filter: blur(20px);
-    -webkit-filter: blur(20px);
-    max-width: 110%;
-
-    position: absolute;
-    top: -5%;
-    left: -5%;
+h1{
+    font-size: 48px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Roboto Slab", serif;
+    color: #333;
 }
 
-container{
+.breaker{
+    height: 2px;
+    color: #333;
+    width: 600px;
+    margin: auto;
+    margin-top: 5px;
+    z-index: 3;
+}
+
+
+.container{
     display: block;
     width: 100%;
     margin: auto;
+}
+#formHolder{
+    width: 20%;
+    margin: auto;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 50px;
 }
 
 form{
     display:flex;
     flex-direction: column;
-    width: 20%;
-    position: absolute;
-    margin: auto;
-
+    width: 100%;
 }
 
 input{
@@ -40,6 +57,7 @@ input{
 
 label{
     margin: 2px;
+    font-size: 20px;
 }
 input[type=text]{
     padding: 5px;
@@ -47,3 +65,18 @@ input[type=text]{
     margin:5px;
 }
 
+
+#message{
+    font-size: 20px;
+    height: 25px;
+    transition: all .25s ease-in;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.inactive{
+    opacity: 0;
+    margin-top: 20px;
+}
