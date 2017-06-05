@@ -1,0 +1,23 @@
+body{
+    background-color: #64B5F6;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+input{
+    flex: 1;
+    margin: 5px 0;
+}
+
+label{
+    margin: 2px;
+}
+input[type=text]{
+    padding: 5px;
+    font-size: 16px;
+    margin:5px;
+}
+

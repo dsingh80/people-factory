@@ -1,10 +1,15 @@
-const personForm = document.querySelector('form#personForm');
+const personForm = document.querySelector('#personForm');
+const message = document.querySelector('#message');
 
-function handleSubmit(ev){
+function handleForm(ev){
     ev.preventDefault();
-    console.log("Submit attemped");
+    
     const name = ev.target.personName.value;
-    document.querySelector('h1').textContent = `Hi ${name}!`;
+    const color = ev.target.color.value;
+
+    message.style.color = color;
+    message.textContent = `Hello ${name}`;
+
 }
 
-personForm.addEventListener('submit', handleSubmit);
+personForm.addEventListener('submit', handleForm);
