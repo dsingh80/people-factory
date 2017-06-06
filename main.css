@@ -3,7 +3,6 @@ html{
 }
 
 body{
-    overflow: hidden;
     color: #FFF;
     background-image: url("imgs/background3.jpg");
     background-position: top center;
@@ -60,7 +59,7 @@ label{
     font-size: 20px;
 }
 input[type=text]{
-    padding: 5px;
+    padding: 10px;
     font-size: 16px;
     margin:5px;
 }
